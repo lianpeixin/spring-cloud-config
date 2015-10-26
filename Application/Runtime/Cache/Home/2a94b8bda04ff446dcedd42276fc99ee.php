@@ -78,40 +78,39 @@ hr { border-color: #6BB66D; margin: 0px }
 					<div class="tab-content">
 						<div class="tab-pane active" id="home">
 					    <ul class="breadcrumb">
-					      <li><a href="#">首页</a> <span class="divider"></span></li>
-					      <li><a href="#">Library</a> <span class="divider"></span></li>
-					      <li class="active">Data</li>
+					    	<li onclick="$('#register-modal').modal('show')"><a href="javascript:void(0)">注册</a> <span class="divider"></span></li>
+					    	<li><a href="#">登录</a> <span class="divider"></span></li>
 					    </ul>
 					    <hr>
 					    <div class="hero-unit">
-					      <h1>标题</h1>
-					      <p>作者</p>
-					      <p>内容</p>
-					      <p>
-					        <a class="btn btn-primary btn-large">
-					          Learn more
-					        </a>
-					      </p>
+					    	<h1>标题</h1>
+					    	<p>作者</p>
+					    	<p>内容</p>
+					    	<p>
+					        	<a class="btn btn-primary btn-large">
+					          	Learn more
+					        	</a>
+					    	</p>
 					    </div>
 					    <div class="hero-unit">
-					      <h1>标题</h1>
-					      <p>作者</p>
-					      <p>内容</p>
-					      <p>
-					        <a class="btn btn-primary btn-large">
-					          Learn more
-					        </a>
-					      </p>
+					    	<h1>标题</h1>
+					    	<p>作者</p>
+					    	<p>内容</p>
+					    	<p>
+					        	<a class="btn btn-primary btn-large">
+					          	Learn more
+					        	</a>
+					      	</p>
 					    </div>
 					    <div class="hero-unit">
-					      <h1>标题</h1>
-					      <p>作者</p>
-					      <p>内容</p>
-					      <p>
-					        <a class="btn btn-primary btn-large">
-					          Learn more
-					        </a>
-					      </p>
+					    	<h1>标题</h1>
+					      	<p>作者</p>
+					      	<p>内容</p>
+					      	<p>
+					        	<a class="btn btn-primary btn-large">
+					          	Learn more
+					        	</a>
+					      	</p>
 					    </div>
 					    <div class="hero-unit">
 					      <h1>标题</h1>
@@ -133,6 +132,45 @@ hr { border-color: #6BB66D; margin: 0px }
 		</div>
 	</div>
 	<!-- /.container -->
+  <!-- modals start -->
+  <!-- register modal start -->
+	<div class="modal fade" id="register-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title">注册</h4>
+				</div>
+				<div class="modal-body">
+					<form role="form">
+						<div class="form-group">
+							<label>邮箱</label>
+							<input type="text" class="form-control" id="" placeholder="请输入邮箱">
+						</div>
+						<div class="form-group">
+							<label>昵称</label>
+							<input type="text" class="form-control" id="" placeholder="3～20位昵称">
+						</div>
+						<div class="form-group">
+							<label>密码</label>
+							<input type="password" class="form-control" id="" placeholder="6~20位密码">
+						</div>
+						<div class="form-group">
+							<label>确认密码</label>
+							<input type="password" class="form-control" id="" placeholder="请再次输入密码">
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">关闭
+					</button>
+					<button type="button" class="btn btn-success">提交更改</button>
+				</div>
+			</div>
+			<!-- /.modal-content -->
+		</div>
+	</div>
+	<!-- register modal end -->
+	<!-- modals end -->
 
 	<!-- Bootstrap core JavaScript
     ================================================== -->
