@@ -17,12 +17,9 @@
 <link href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css"
 	rel="stylesheet">
 <style>
-body { margin: 0; padding: 0; width:100% }
 .container { width: 100%; padding: 0 }
-.container > .row { width: 100%; padding: 0; margin: 0 }
+.container > .row { width: 100%; margin: 0 }
 .row > .col-sm-2, .row > .col-sm-12 { background-color: #6BB66D; padding: 0 }
-.col-sm-2 > .container {  }
-.img-round { border-radius: 50% }
 .breadcrumb { padding-left: 0px; background: transparent; margin-bottom: 0px }
 hr { border-color: #6BB66D; margin: 0px }
 .hero-unit { background-color: #EEEEEE; margin: 10px 0px; padding: 5px; border-radius: 5px }
@@ -33,7 +30,8 @@ hr { border-color: #6BB66D; margin: 0px }
 
 
 #main-menu { padding-top: 1em; padding-bottom: 2em }
-#main-menu-head { display: block; text-align: center }
+#main-menu-head { display: block; text-align: center; border-radius: 50% }
+#main-menu-head > img { border-radius: 50% }
 #main-menu-nickname { text-align: center; color: #FFF; margin-top: 0.5em }
 </style>
 </head>
@@ -46,14 +44,21 @@ hr { border-color: #6BB66D; margin: 0px }
 				<div class="container">
 					<div class="row">
 						<div class="col-sm-12">
-							<a id="main-menu-head"><img class="img-round" src="http://www.gexing.com.cn/uploadfile/2011/0819/20110819085842173.jpg"></a>
+							<a id="main-menu-head"><img src="http://www.gexing.com.cn/uploadfile/2011/0819/20110819085842173.jpg"></a>
 							<p id="main-menu-nickname">连培鑫</p>
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-sm-12">
 							<ul class="nav nav-pills nav-stacked">
-								<li><a href="#home" data-toggle="tab">首页</a></li>
+								<li class="dropdown active">
+								  <a href="#" class="dropdown-toggle" data-toggle="dropdown">首页<b class="caret"></b></a>
+							    <ul class="dropdown-menu">
+							      <li><a href="#home" data-toggle="tab">首页1</a></li>
+		                <li><a href="#messages" data-toggle="tab">首页2</a></li>
+		                <li><a href="#settings" data-toggle="tab">首页3</a></li>
+							    </ul>
+							  </li>
 								<li><a href="#profile" data-toggle="tab">Profile</a></li>
 								<li><a href="#messages" data-toggle="tab">Messages</a></li>
 								<li><a href="#settings" data-toggle="tab">Settings</a></li>
